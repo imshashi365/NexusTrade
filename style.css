@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    justify-items: start;
+    z-index: 1;
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.span-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 33px;
+    background-color: #2d2d2d;
+}
+.menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.menu a:hover {
+    color: #f1f1f1;
+}
+.menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.logo {
+    width: 24%;
+    margin-right: 56px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .one, .two {
+    width: 100%; /* Adjust width as needed */
+  }
+  
+.back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    height:1000px;
+    padding-bottom: 200px;
+    --dot-bg: black;
+    --dot-color: rgb(235, 235, 235);
+    --dot-size: 1px;
+    --dot-space: 50px;
+    background: linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 100%) center / var(--dot-space) var(--dot-space), linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 50%) center / var(--dot-space) var(--dot-space), var(--dot-color);
+    justify-content: center;
+}
+
+.pagesback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; /* Adjust as needed */
+    height:auto;
+    padding-bottom: 200px;
+    --dot-bg: black;
+    --dot-color: rgb(235, 235, 235);
+    --dot-size: 1px;
+    --dot-space: 50px;
+    background: linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 100%) center / var(--dot-space) var(--dot-space), linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 50%) center / var(--dot-space) var(--dot-space), var(--dot-color);
+    justify-content: center;
+}
+.Pages{
+    color: white;
+}
+.page-content {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 200px 50px 200px;
+}
+.minerbox2 h1{
+    font-size: 48px;
+    font-feature-settings: normal;
+}
+
+.minerbox {
+    display: flex;
+    width: 60%;
+    height: 500px;
+    margin-top: 8%;
+    background-color: #141414;
+    border-radius: 51px;
+    border-top: 10px rgb(2, 201, 19) solid;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.minerbox2 {
+    width: 90%;
+    height: 100px;
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 49px;
+    flex-direction: column;
+}
+.result-container {
+    color: white;
+}
+.input-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input#numberInput {
+    width: 41%;
+    height: 49px;
+    font-size: 21px;
+    border-radius: 15px 0px 0px 15px;
+    padding-left: 24px;
+}
+.minbtn {
+    width: 60px;
+    height: 52px;
+    border-radius: 0px 15px 15px 0px;
+    border: 0px;
+    margin-left: -2px;
+    background-color: black;
+    border: 2px white solid;
+    color: white;
+}
+.result-container{
+    margin-top: 40px;
+}
+.result-box{
+    margin-top: 10px;
+}
+.result-box.support-level {
+    font-size: 20px;
+    font-weight: 700;
+}
+.result-box.resistance-level {
+    font-size: 20px;
+    font-weight: 700;
+}
+span#support {
+    font-weight: 200;
+    color: #ff7979;
+}
+span#resistance {
+    font-weight: 200;
+    color: #ff7979;
+}
+.instructions {
+    color: white;
+    padding: 98px;
+    padding-top: 52px;
+}
+
+
+
+footer {
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+    padding: 20px 0;
+    border-top: 2px rgb(82, 82, 82) solid;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #aaa;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    /* width: 44px; */
+}
+
+
+.social-media a img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover img {
+    transform: scale(1.1);
+}
+
+.logo2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logo2 img {
+    width: 216px;
+}
+.credit{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.disclaimer{
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(152, 152, 152);
+    padding: 20px 50px 20px 50px;
+}
+div#message {
+    color: rgb(255, 36, 36);
+}
+.minerbox2 img {
+    margin-top: -23px;
+    width: 254px;
+}
+
+.bnk{
+    color: #61ee1b;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    /* box-shadow: 10px 10px 5px rgb(55, 55, 55); */
+
+}
+.watch {
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 6px 40px 6px 40px;
+    background-image: linear-gradient(to right, #61ee1c, #ffc940);
+    border-radius: 29px;
+    color: black;
+}
+
+.header a {
+    display: flex;
+    justify-content: right;
+}
+@media only screen and (max-width: 600px) {
+    .minerbox {
+        display: flex;
+        width: 90%;
+        height: 800px;
+        margin-top: 40%;
+ 
+    }
+    .minerbox2 h1 {
+     
+        margin-top: 86px;
+
+    }
+    input#numberInput {
+        width: 81%;
+        height: 49px;
+        font-size: 21px;
+        border-radius: 15px 0px 0px 15px;
+        padding-left: 24px;
+    }
+    .instructions {
+        color: white;
+        padding: 38px;
+        padding-top: 52px;
+    }
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 30px 50px 30px;
+    }
+  }
