@@ -4,36 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BankNifty Levels Miner  - TradeNexus</title>
+    <title>Nifty Levels Miner - TradeNexus</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="sticky">
-    <div class="header">
-        <span class="menu-icon" onclick="openMenu()">&#9776;</span>
-        <a href="index.html"><img src="./img/nexustrade.png" alt="logo" class="logo"></a>
-    </div>
+    <div class="sticky">
+        <div class="header">
+            <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+            <a href="index.html"><img src="./img/nexustrade.png" alt="logo" class="logo"></a>
+        </div>
 
-    <div id="myMenu" class="menu">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
-        <a href="/nifty-miner.html">Nifty Miner</a>
-        <a href="/crude-miner.html">Crude Miner</a>
-        <a href="/gold-miner.html">Gold Miner</a>
-        <div class="span-line"></div>
-        <a href="/p/terms-and-consitions.html">Terms & Conditions</a>
-        <a href="/p/disclaimer.html">Disclaimer</a>
-
+        <div id="myMenu" class="menu">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="index.html">Bank Nifty Miner</a>
+            <a href="/nifty-miner.html">Nifty Miner</a>
+            <a href="/crude-miner.html">Crude Miner</a>
+            <a href="/gold-miner.html">Gold Miner</a>
+            <div class="span-line"></div>
+            <a href="/p/terms-and-consitions.html">Terms & Conditions</a>
+            <a href="/p/disclaimer.html">Disclaimer</a>
+        </div>
     </div>
-</div>
 
     <div class="back">
 
         <div class="minerbox2">
-            <h1> <span class="bnk">Coming Soon..</span></h1>
+            <h1>Sure Shot* <span class="bnk">Nifty Levels Miner</span></h1>
             <img src="./img/underline.png" alt="">
         </div>
-        
+        <div class="minerbox">
+
+            <!-- <body oncontextmenu="return false;"> -->
+            <div class="container">
+                <!-- <h1>BankNifty Levels Miner</h1> -->
+                <div class="input-container">
+                    <input type="number" id="numberInput" placeholder="Enter the level">
+                    <button onclick="calculateLevels()" class="minbtn">Mine</button>
+                </div>
+                <div id="message"></div>
+                <div class="result-container">
+                    <div class="result-box support-level">Support Level:
+                        <span id="support"></span>
+                    </div>
+                    <div class="result-box resistance-level">Resistance
+                        Level: <span id="resistance"></span></div>
+                </div>
+            </div>
+            <div class="instructions">
+                <p><strong>Instructions:</strong></p>
+                <ul>
+                    <li>Enter the previous day's closing value to calculate the support and resistance levels for today.</li>
+                    <li>If there is a gap opening of more than 50 points, enter the current day's opening price instead.</li>
+                    <li>Note: The tool provides an accuracy rate of approximately 70-75%. Use the calculated levels as guidance.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 
@@ -49,6 +75,7 @@
                 <img src="./img/nexustrade.png" alt="Logo">
             </div>
             <nav class="footer-links">
+                <a href="index.html">Bank Nifty Miner</a>
                 <a href="/nifty-miner.html">Nifty Miner</a>
                 <a href="/crude-miner.html">Crude Miner</a>
                 <a href="/gold-miner.html">Gold Miner</a>
@@ -67,7 +94,7 @@
             </div>
         </div>
 
-        
+
     </footer>
     <div class="disclaimer">The trading tool provided is intended to assist users in identifying potential support and
         resistance levels for Banifty, Nifty, Crude, and Gold. While it utilizes various analytical techniques, it
@@ -82,7 +109,7 @@
     <div class="credit">Made By Shashi</div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="nifty.js"></script>
 
 </body>
 
